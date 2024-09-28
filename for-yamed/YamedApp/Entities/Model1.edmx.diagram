@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="92f7f41549434399ac643fdb79e88a01" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="Bank2Model.Balance" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="Bank2Model.Currency" Width="1.5" PointX="3" PointY="5.625" />
+        <EntityTypeShape EntityType="Bank2Model.Gender" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="Bank2Model.Operation" Width="1.5" PointX="7.5" PointY="1.25" />
+        <EntityTypeShape EntityType="Bank2Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Bank2Model.Transaction" Width="1.5" PointX="5.25" PointY="5.625" />
+        <EntityTypeShape EntityType="Bank2Model.User" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="Bank2Model.UserLogin" Width="1.5" PointX="0.75" PointY="5.5" />
+        <AssociationConnector Association="Bank2Model.FK_Balance_Currency" />
+        <AssociationConnector Association="Bank2Model.FK_Balance_User" />
+        <AssociationConnector Association="Bank2Model.FK_Operation_Balance" />
+        <AssociationConnector Association="Bank2Model.FK_User_Gender" />
+        <AssociationConnector Association="Bank2Model.FK_Operation_Transaction" />
+        <AssociationConnector Association="Bank2Model.FK_Operation_User" />
+        <AssociationConnector Association="Bank2Model.FK_User_UserLogin" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
